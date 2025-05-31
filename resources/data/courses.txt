@@ -1,0 +1,24 @@
+PR1025,Python for Beginners,Nimali Perera,Programming,This course introduces Python programming from scratch You will learn variables loops functions and how to build simple programs It's perfect for beginners with no prior coding experience.,/course_img/PR1025.png
+SE1130,Java,Pradip Jayawardana,Programming,Learn the basics and advanced features of Java including OOP concepts like classes and inheritance Build real-world applications with confidence.,/course_img/SE1130.png
+DS2034,Graphic Design Basics,Kasun Silva,Design,Learn the fundamentals of graphic design including color theory typography and layout This course is great for anyone interested in creating visual content for print or digital media.,/course_img/DS2034.png
+MK3098,Digital Marketing 101,Sanduni Jayasuriya,Marketing,This course covers the basics of digital marketing including SEO social media strategies email marketing and Google Ads Ideal for beginners looking to grow a business online.,/course_img/MK3098.png
+BU1542,Introduction to Business Management,Asela Fernando,Business,Understand the core principles of business management including planning organizing leading and controlling Perfect for aspiring managers and entrepreneurs.,/course_img/BU1542.png
+PR2235,Web Development with HTML & CSS,Hirantha Madushanka,Programming,Start your journey into web development by learning HTML and CSS to build modern responsive websites No prior experience is required.,/course_img/PR2235.png
+SC3329,Physics Made Simple,Nipun Rathnayake,Science,Learn key concepts of physics including motion energy force and electricity in a clear and simple way Great for students who want to improve their science knowledge.,/course_img/SC3329.png
+SO2677,Introduction to Psychology,Chamodi Ekanayake,Social,Explore the human mind and behavior through topics like memory emotion personality and learning Suitable for beginners and curious minds.,/course_img/SO2677.png
+TE1093,AI and Machine Learning Basics,Dilanka Rajapaksha,Technology,Discover how AI and machine learning work with beginner-friendly lessons on algorithms models and data Ideal for tech enthusiasts and future developers.,/course_img/TE1093.png
+TE2238,Introduction to Cybersecurity,Isuru Liyanage,Technology,Learn the basics of cybersecurity including how to protect your personal data understand cyber threats and use tools to stay safe online.,/course_img/TE2238.png
+TE3472,Cloud Computing Fundamentals,Amaya De Silva,Technology,Explore cloud technologies like AWS Azure and Google Cloud Understand how cloud storage virtual machines and services work in modern computing.,/course_img/TE3472.png
+TE4785,Internet of Things (IoT) Essentials,Chamara Weerasinghe,Technology,Get introduced to IoT devices sensors and connectivity Learn how smart technology works and how it is used in homes cities and industries.,/course_img/TE4785.png
+
+
+
+
+
+
+
+
+
+
+
+

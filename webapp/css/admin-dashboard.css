@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #F2F6FF;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 1rem;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* Main Content */
+.container {
+    padding: 1.5rem;
+    max-width: 1700px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1F2A44;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: #1F2A44;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+h4 {
+    color: #1F2A44;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.management-section {
+    flex: 3;
+    min-width: 280px;
+}
+
+.management-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.management-cards.single-row {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.management-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    font-size: 2rem;
+}
+
+.management-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.management-card i {
+    color: #3B82F6;
+}
+
+.management-card .stat-value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.management-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.management-card p {
+    color: #6B7280;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.management-card .btn {
+    background-color: #1E3A8A;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.management-card .btn:hover {
+    background-color: #2A3A54;
+    transform: scale(1.05);
+}
+
+.stat-card {
+    height: 200px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.stat1 {
+    background-image: url('/img/userstat.png');
+}
+
+.stat2 {
+    background-image: url('/img/coursestat.png');
+}
+
+.stat3 {
+    background-image: url('/img/pendingstat.png');
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar-section {
+    flex: 1;
+    min-width: 280px;
+}
+
+.announcement-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.announcement-card h4 {
+    margin-bottom: 1rem;
+}
+
+.announcement-card .announcement {
+    background-color: #FFF7ED;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border-left: 4px solid #F97316;
+}
+
+.announcement-card .announcement p {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.announcement-card .posted-date {
+    color: #6B7280;
+    font-size: 12px;
+    margin-top: 0.5rem;
+}
+
+.calendar-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.calendar-card iframe {
+    width: 100%;
+    height: 280px;
+}
+
+.announcements-section {
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.announcement-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.announcement {
+    background-color: #FFF7ED;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #F97316;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: block;
+}
+
+.announcement:hover {
+    transform: translateX(5px);
+}
+
+.announcement p {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.announcement h5 {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.posted-date {
+    color: #6B7280;
+    font-size: 12px;
+    margin-top: 0.5rem;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1F2A44;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.carousel-controls button:hover {
+    color: #3B82F6;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #1a2a44 0%, #2a3a54 100%);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-content a {
+    color: #3B82F6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #1976D2;
+}
+
+/* Animations */
+.animate-section {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .management-cards.single-row {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .stat-card {
+        height: 160px;
+    }
+}
+
+@media (max-width: 992px) {
+    .admin-dashboard {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .management-section,
+    .sidebar-section {
+        min-width: 100%;
+    }
+
+    .management-card,
+    .calendar-card,
+    .announcement-card {
+        width: 100%;
+    }
+
+    .stat-card {
+        height: 140px;
+    }
+
+    .management-card .stat-value {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0.5rem;
+    }
+
+    .container {
+        padding: 0.75rem;
+        border-radius: 10px;
+    }
+
+    .management-cards.single-row {
+        grid-template-columns: 1fr;
+    }
+
+    .management-card {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+
+    .management-card .stat-value {
+        font-size: 2rem;
+    }
+
+    .management-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .management-card p {
+        font-size: 0.9rem;
+    }
+
+    .management-card .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .stat-card {
+        height: 120px;
+    }
+
+    .stat-card p {
+        font-size: 1.2rem;
+    }
+
+    .calendar-card iframe {
+        height: 200px;
+    }
+
+    .announcements-section {
+        margin-top: 1.5rem;
+    }
+
+    .announcement-card .announcement p {
+        font-size: 0.85rem;
+    }
+
+    .announcement p {
+        font-size: 0.9rem;
+    }
+
+    .announcement h5 {
+        font-size: 1.1rem;
+    }
+
+    /* Navbar Adjustments */
+    .navbar-brand {
+        margin-right: 1rem;
+    }
+
+    .navbar-toggler {
+        margin: 0 1rem;
+    }
+
+    .d-flex.align-items-center {
+        margin: 0.5rem 0.25rem;
+        min-width: 100px;
+    }
+
+    .dropdown-menu {
+        right: auto;
+        left: 0;
+        width: 180px;
+        min-width: 180px;
+        max-width: calc(100vw - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .management-card {
+        font-size: 1.2rem;
+    }
+
+    .management-card .stat-value {
+        font-size: 1.8rem;
+    }
+
+    .management-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .management-card p {
+        font-size: 0.85rem;
+    }
+
+    .management-card .btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .stat-card {
+        height: 100px;
+    }
+
+    .stat-card p {
+        font-size: 1rem;
+    }
+
+    .calendar-card {
+        padding: 0.5rem;
+    }
+
+    .calendar-card iframe {
+        height: 180px;
+    }
+
+    .announcement {
+        padding: 0.5rem;
+    }
+
+    .announcement p {
+        font-size: 0.85rem;
+    }
+
+    .announcement h5 {
+        font-size: 1rem;
+    }
+
+    .announcement-card .announcement p {
+        font-size: 0.8rem;
+    }
+
+    .footer-content p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .d-flex.align-items-center {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

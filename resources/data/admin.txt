@@ -1,0 +1,4 @@
+1,Super Admin,admin,admin@example.com,$2a$10$1LCijr8Jixehq8NAl7BJIO6UzVDFAO1CCAPYPJVj8mN2eFL6Q1XWi
+2,Pasindu Samarasinghe,pasindu,Pasindu@gmail.com,$2a$10$W3MIFTW6uArSLNFojRwr3uGRj.9qf3XkXqLctoyGKz1bsJGwDjzNS
+
+3,Gevindu Jayarathna,Gevindu,Gevindu@gmail.com,$2a$10$P9.UIaWba6vdfrbMQuSlXePF.OQtyB1/P5S0M9ONuQRPiEWmysP2e

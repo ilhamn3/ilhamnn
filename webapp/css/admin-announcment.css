@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f5f7fa 100%);
+    color: #333;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 1.5rem;
+    min-height: calc(100vh - 60px);
+    overflow: auto;
+    clear: both;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ececec;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Ensures vertical centering */
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1a2a44;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: #1a2a44;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+h4 {
+    color: #1a2a44;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Animations */
+.animate-section {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button Styles */
+button.btn {
+    background-color: #1a2a44;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #2a3a54;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #1a2a44 0%, #2a3a54 100%);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-content a {
+    color: #2196F3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #1976D2;
+}
+
+/* Form Card Styles */
+.form-card {
+    width: 50%;
+    margin-left: 25%;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-card label {
+    font-weight: 500;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.form-card input,
+.form-card textarea {
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.form-card input.error,
+.form-card textarea.error {
+    border-color: #f44336;
+}
+
+.form-card textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-card button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-card button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.form-card button.loading {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #1a2a44;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr {
+    transition: background-color 0.3s;
+}
+
+tr:hover {
+    background-color: #f5f7fa;
+}
+
+td {
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.actions button:hover {
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Success green */
+    color: white;
+    padding: 1.5rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensure it stays above other content */
+    max-width: 400px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.error {
+    background-color: #f44336; /* Error red */
+}
+
+.toast .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.toast .close-btn:hover {
+    color: #ccc;
+}
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background: #555;
+}
+
+body.dark-mode {
+    background: #1a1a1a;
+    color: #ddd;
+}
+
+body.dark-mode .form-card {
+    background: #2a2a2a;
+}
+
+body.dark-mode .form-card label {
+    color: #ddd;
+}
+
+body.dark-mode .form-card input,
+body.dark-mode .form-card textarea {
+    background: #333;
+    color: #ddd;
+    border-color: #555;
+}
+
+body.dark-mode .form-card input:focus,
+body.dark-mode .form-card textarea:focus {
+    border-color: #3b82f6;
+}
+
+body.dark-mode table {
+    background: #2a2a2a;
+}
+
+body.dark-mode td {
+    color: #ddd;
+}
+
+body.dark-mode tr:hover {
+    background: #3a3a3a;
+}
+
+body.dark-mode .toast {
+    background-color: #388E3C; /* Dark mode success green */
+}
+
+body.dark-mode .toast.error {
+    background-color: #D32F2F; /* Dark mode error red */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .form-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .footer-section {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .form-card {
+        padding: 1rem;
+    }
+
+    .form-card input,
+    .form-card textarea {
+        font-size: 0.9rem;
+    }
+
+    .form-card button {
+        font-size: 0.9rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .toast {
+        bottom: 10px;
+        right: 10px;
+        padding: 1rem 1.5rem;
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
+}
